@@ -58,7 +58,7 @@ http://127.0.0.1:5000/
 4. Click the "Predict Career" button to see the predicted career and recommendations.
 
 ## Input Fields
-
+- **Age**: Your age (above 18).
 - **GPA**: Your Grade Point Average (scale 0 to 10).
 - **Python Skill**: Your proficiency in Python (Weak, Average, Strong).
 - **SQL Skill**: Your proficiency in SQL (Weak, Average, Strong).
