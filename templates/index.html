@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Career Prediction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="bg-primary text-white py-4 mb-4">
+        <div class="container">
+            <h1 class="text-center">Career Prediction</h1>
+        </div>
+    </header>
+    <div class="container">
+        <form action="/predict" method="post" class="bg-white p-4 rounded shadow-sm">
+            <div class="mb-3">
+                <label for="age" class="form-label">Age:</label>
+                <input type="number" id="age" name="age" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label for="gpa" class="form-label">GPA:</label>
+                <input type="number" id="gpa" name="gpa" step="0.1" min="0" max="10" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label for="python_skill" class="form-label">Python Skill:</label>
+                <select id="python_skill" name="python_skill" class="form-select" required>
+                    <option value="Weak">Weak</option>
+                    <option value="Average">Average</option>
+                    <option value="Strong">Strong</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="sql_skill" class="form-label">SQL Skill:</label>
+                <select id="sql_skill" name="sql_skill" class="form-select" required>
+                    <option value="Weak">Weak</option>
+                    <option value="Average">Average</option>
+                    <option value="Strong">Strong</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="java_skill" class="form-label">Java Skill:</label>
+                <select id="java_skill" name="java_skill" class="form-select" required>
+                    <option value="Weak">Weak</option>
+                    <option value="Average">Average</option>
+                    <option value="Strong">Strong</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Predict Career</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
